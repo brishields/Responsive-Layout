@@ -30,7 +30,6 @@ a {
     font-weight: bold;
     font-size: 14px;
 }
-
 /* Removes indentation from all unordered lists*/
 ul {
     padding-inline-start: 0px;
@@ -82,7 +81,6 @@ h2 {
     padding-bottom: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
-    font-size: 14px;
 }
 
 h3 {
@@ -334,9 +332,9 @@ footer p {
         margin-right: auto;
     }
 
-body {
-    margin: 20px;
-}
+    body {
+        margin: 20px;
+    }
     .name-nav-container {
         display: flex;
         max-width: 1400px;
@@ -344,6 +342,16 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+
+    header a, .footer-nav a {
+        display: inline-block;
+        transition: transform .5s;
+}
+
+    header a:hover, .footer-nav a:hover {
+        transform: scale(1.2) translatey(-5px);
+        color:#2572aa
+}
 
     .profile-pic-bio-container {
         max-width: 100%;
