@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Sets color to White and removes browser margins */
+body {
+    background-color: #fafafa;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #4A4A4A;
+}
+
+main {
+    background-color: #ffff;
+    width: 100%;
+}
+
+/* Removes bullets and indentation from all list items */
+li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Removes underscore and color from all links */
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Removes indentation from all unordered lists*/
+ul {
+    padding-inline-start: 0px;
+}
+
+/* Removes italics from address font*/
+address {
+    font-style: normal;
+    color: #7F7F7F;
+}
+
+/* Bolds and colors contact phone number, email address and footer nav tiems */
+address span {
+    font-weight: bold;
+    color: #7F7F7F;
+}
+
+address a {
+    color: #7F7F7F;
+}
+/* Styles tbe naviagation list items */
+nav li {
+    background-color: #ffff;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+/* Desaturates and resizes the horizantal rule to match project specifications */
+hr {
+    border: 1px solid #E7E7E7;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+
+}
+
+h3 {
+    font-weight: 600;
+}
+.portfolio-tile img, .skills-tile img {
+    max-width: 100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-tile img {
+    max-width: 50%;
+}
+
+.profile-pic-bio-container {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.profile-pic-bio-container img {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Removes bottom margin and increase top*/
+.profile-pic-bio-container p {
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.portfolio-tile, .skills-tile {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.portfolio-tile {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 33px;
+}
+/* Removes bottom padding of last portfolio tile */
+div.portfolio-tile:last-of-type {
+    padding-bottom: 0px;
+}
+
+.skills-tile {
+    padding-bottom: 45px;
+}
+div.skills-tile:last-of-type {
+    padding-bottom: 60px;
+}
+
+footer section, footer address {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer li {
+    display: inline;
+    padding-top: 13px;
+}
+
+.footer-nav {
+    display: flex;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+footer li:nth-child(1) {
+    display: inline;
+    width: 50%;
+    margin-right: auto;
+    height: 40px;
+    padding-left: 1em;
+}
+
+footer li:nth-child(2) {
+    display: inline;
+    text-align: right;
+    width: 50%;
+    height: 40px;
+    margin-left: auto;
+    padding-right: 1em;
+}
+
+footer p {
+    margin-top: 0px;
+}
