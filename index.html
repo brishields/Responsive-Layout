@@ -13,28 +13,30 @@
     <body>
 
         <header>
-            <h1 id="home">Student Name</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+            <div class="name-nav-container">
+                <h1 id="home">Student Name</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="profile-pic-bio-container">
-            <img src="images/responsive-layout-profile.png" alt="illustration of smiling student">
-            <p> Hi! I'm a front-end developer who loves responsive design and css. 
-                I recently finished a degree in front-end web development at Treehouse 
-                and am excited to put all my skills to use!</p>
+                <img src="images/responsive-layout-profile.png" alt="illustration of smiling student">
+                <p> Hi! I'm a front-end developer who loves responsive design and css. 
+                    I recently finished a degree in front-end web development at Treehouse 
+                    and am excited to put all my skills to use!</p>
             </div>
         </header>
         
         <main class="main-container">            
-            <section>
+            <section class="portfolio-margin-wrapper">
             
                 <h2 id="portfolio">PORTFOLIO</h2>
-
+                <div class="portfolio-container">
                 <div class="portfolio-tile">
                     <img src="images/portfolio-1.png" alt="webpage illustration on skyblue background">
                     <h3>Marketing Page</h3>
@@ -71,15 +73,17 @@
                     <p>Someone can enter in the numbers they want, and press the big 
                         blue button and get the result.</p>
                 </div>
+            </div>
             </section>
 
             <section>
                 <h2 id="skills">SKILLS</h2>
-                <div class="skills-tile"><img src="images/html5-logo.svg"></div>
-                <div class="skills-tile"><img src="images/css3-logo.svg"></div>
-                <div class="skills-tile"><img src="images/javascript_logo.svg"></div>
-                <div class="skills-tile"><img src="images/bootstrap_logo.svg"></div>
-                
+                <div class="skills-container">
+                    <div class="skills-tile"><img src="images/html5-logo.svg"></div>
+                    <div class="skills-tile"><img src="images/css3-logo.svg"></div>
+                    <div class="skills-tile"><img src="images/javascript_logo.svg"></div>
+                    <div class="skills-tile"><img src="images/bootstrap_logo.svg"></div>
+                </div>
             </section>
 
         </main>
@@ -97,7 +101,11 @@
             <hr>
             <ul class="footer-nav">
                 <li>Student name</li>
-                <li><a href="#home">BACK TO TOP</a></li>
+                <li class="large-device-hidden-footer-nav"><a href="#home">BACK TO TOP</a></li>
+                <li class="mobile-hidden-footer-nav"><a href="#home">HOME</a></li>
+                <li class="mobile-hidden-footer-nav"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="mobile-hidden-footer-nav"><a href="#skills">SKILLS</a></li>
+                <li class="mobile-hidden-footer-nav"><a href="#contact">CONTACT</a></li>
             </ul>
         </footer>
     </body>

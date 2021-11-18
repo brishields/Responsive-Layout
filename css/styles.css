@@ -5,7 +5,6 @@
 /* Sets color to White and removes browser margins */
 body {
     background-color: #fafafa;
-    margin: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #4A4A4A;
@@ -68,6 +67,7 @@ hr {
     border: 1px solid #E7E7E7;
     margin-inline-start: 1em;
     margin-inline-end: 1em;
+    margin-top: 70px;
 }
 
 h1 {
@@ -89,8 +89,8 @@ h2 {
 h3 {
     font-weight: 600;
 }
-.portfolio-tile img, .skills-tile img {
-    max-width: 100%;
+.portfolio-tile img {
+    max-width: 90%;
     height:auto;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +98,10 @@ h3 {
 
 .skills-tile img {
     max-width: 50%;
-}
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 .profile-pic-bio-container {
     width: 100%;
@@ -107,10 +110,12 @@ h3 {
     padding-right: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-pic-bio-container img {
-    max-width: 200px;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -121,7 +126,7 @@ h3 {
 }
 
 .portfolio-tile, .skills-tile {
-    max-width: 320px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -137,11 +142,20 @@ div.portfolio-tile:last-of-type {
     padding-bottom: 0px;
 }
 
+.portfolio-tile p {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
 .skills-tile {
     padding-bottom: 45px;
 }
 div.skills-tile:last-of-type {
     padding-bottom: 60px;
+}
+
+footer{
+    padding-top: 30px;
 }
 
 footer section, footer address {
@@ -159,10 +173,11 @@ footer li {
     display: flex;
     font-weight: bold;
     color: #4A4A4A;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer li:nth-child(1) {
-    display: inline;
     width: 50%;
     margin-right: auto;
     height: 40px;
@@ -170,7 +185,6 @@ footer li:nth-child(1) {
 }
 
 footer li:nth-child(2) {
-    display: inline;
     text-align: right;
     width: 50%;
     height: 40px;
@@ -180,4 +194,192 @@ footer li:nth-child(2) {
 
 footer p {
     margin-top: 0px;
+}
+
+.mobile-hidden-footer-nav {
+    display: none;
+}
+
+
+/* Media Queries */
+
+
+/* Tablet-Sized Screens */
+@media screen and (min-width: 768px) {
+
+    nav {
+        display: flex;
+        max-width: 1023px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: center;  
+    }
+
+    nav li {
+        display: inline;
+        margin-left: 15px;
+        padding: 10px;
+        background-color: inherit;
+    }
+
+    .name-nav-container {
+        display: flex;
+        max-width: 1023px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;  
+    }
+
+    .profile-pic-bio-container {
+        display: flex;
+        max-width: 1023px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-pic-bio-container img {
+        max-width: 40%;
+    }
+
+    .profile-pic-bio-container p {
+        margin-top: 0px;
+        padding-right: 20px;
+    }
+
+    .portfolio-margin-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-container {
+        display: flex;
+        max-width: 1023px;
+        flex-wrap: wrap;
+        padding: 6px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-tile {
+        max-width: 50%;
+        padding: 6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .portfolio-tile p {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+    .skills-container {
+        display: flex;
+        max-width: 1023px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills-tile {
+        margin: 0px;
+        padding-top: 20px;
+        width: 40%;
+        max-width: 50%;
+    }
+
+    .skills-tile img {
+        width: 50%;
+    }
+
+    .large-device-hidden-footer-nav {
+        display: none;
+    }
+
+    .mobile-hidden-footer-nav {
+        display: inline;
+        margin: 10px 0px 10px 15px;
+        padding: 10px;
+    }
+
+    .footer-nav {
+        display: flex; 
+        max-width: 1023px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* Desktop-Sized Screens */
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1400px;
+        padding-left: 102px;
+        padding-right: 62px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .name-nav-container {
+        display: flex;
+        max-width: 1400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile-pic-bio-container {
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .profile-pic-bio-container p {
+        padding-right: 20px;
+    }
+
+    .portfolio-container {
+        max-width: 1400px;
+    }
+
+    .portfolio-tile {
+        max-width: 30%;
+    }
+
+    .skills-container {
+        max-width: 1400px;
+    }
+    .skills-tile {
+        max-width: 25%;
+    }
+
+    .footer-nav {
+        max-width: 1400px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    hr {
+        margin-inline-start: 46px;
+        margin-inline-end: 46px;
+    }
+
 }
