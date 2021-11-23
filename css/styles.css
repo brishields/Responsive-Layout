@@ -319,8 +319,8 @@ footer p {
 @media only screen and (min-width: 1024px) {
 
     header {
-        padding-left: 102px;
-        padding-right: 62px;
+        padding-left: 72px;
+        padding-right: 72px;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -353,6 +353,7 @@ footer p {
     }
 
     .profile-pic-bio-container p {
+        padding-left: 0px;
         padding-right: 20px;
     }
 
