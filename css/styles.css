@@ -61,7 +61,7 @@ nav li {
     font-weight: 600;
     color: #4A4A4A;
 }
-/* Desaturates and resizes the horizantal rule to match project specifications */
+/* Re-colors and resizes the horizantal rule to match project specifications */
 hr {
     border: 1px solid #E7E7E7;
     margin-inline-start: 1em;
@@ -89,21 +89,20 @@ h3 {
 }
 
 .portfolio-tile img {
-    max-width: 90%;
+    width: 90%;
     height:auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 .skills-tile img {
-    max-width: 50%;
+    width: 50%;
     height:auto;
     margin-left: auto;
     margin-right: auto;
 } 
 
 .profile-pic-bio-container {
-    width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -114,7 +113,7 @@ h3 {
 }
 
 .profile-pic-bio-container img {
-    max-width: 70%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -205,11 +204,10 @@ footer p {
 
 
 /* Tablet-Sized Screens */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
     nav {
         display: flex;
-        max-width: 1023px;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: flex-start;
@@ -225,7 +223,6 @@ footer p {
 
     .name-nav-container {
         display: flex;
-        max-width: 1023px;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;  
@@ -233,7 +230,6 @@ footer p {
 
     .profile-pic-bio-container {
         display: flex;
-        max-width: 1023px;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: flex-start;
@@ -244,12 +240,13 @@ footer p {
     }
 
     .profile-pic-bio-container img {
-        max-width: 40%;
+        width: 40%;
     }
 
     .profile-pic-bio-container p {
         margin-top: 0px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 24px;
     }
 
     .portfolio-margin-wrapper {
@@ -259,7 +256,6 @@ footer p {
 
     .portfolio-container {
         display: flex;
-        max-width: 1023px;
         flex-wrap: wrap;
         padding: 6px;
         justify-content: center;
@@ -268,7 +264,7 @@ footer p {
     }
 
     .portfolio-tile {
-        max-width: 50%;
+        width: 50%;
         padding: 6px;
         margin-left: 0px;
         margin-right: 0px;
@@ -281,7 +277,6 @@ footer p {
 
     .skills-container {
         display: flex;
-        max-width: 1023px;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
@@ -314,7 +309,6 @@ footer p {
 
     .footer-nav {
         display: flex; 
-        max-width: 1023px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -322,10 +316,9 @@ footer p {
 }
 
 /* Desktop-Sized Screens */
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
     header {
-        max-width: 1400px;
         padding-left: 102px;
         padding-right: 62px;
         margin-top: 20px;
@@ -336,9 +329,9 @@ footer p {
     body {
         margin: 20px;
     }
+
     .name-nav-container {
         display: flex;
-        max-width: 1400px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -355,7 +348,6 @@ footer p {
 }
 
     .profile-pic-bio-container {
-        max-width: 100%;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -364,24 +356,15 @@ footer p {
         padding-right: 20px;
     }
 
-    .portfolio-container {
-        max-width: 1400px;
-    }
-
     .portfolio-tile {
-        max-width: 30%;
-    }
-
-    .skills-container {
-        max-width: 1400px;
+        width: 30%;
     }
     
     .skills-tile {
-        max-width: 25%;
+        width: 25%;
     }
 
     .footer-nav {
-        max-width: 1400px;
         padding-left: 30px;
         padding-right: 30px;
     }
